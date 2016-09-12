@@ -1,0 +1,75 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <title>porfolio de charles-andre</title> <!-- titre qui est afficher dans l'onglet du site -->
+	<meta charset="utf-8"> 	<!-- permet au site de lire les caractere speciaux -->
+    <link rel="stylesheet" href="http://driad.fr/css/style.css"/>	<!-- lien vers le fichier css du menu de navigation-->
+    <script src="./contact.js"></script> <!-- line vers fichier javascript -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+
+
+<!-- **************** NAVIGATION + TITRE PRINCIPAL *******************  -->
+<header>
+  <!-- MENU  -->
+  <nav>
+    <ul>
+      <li><a href="/index.html"><span>Accueil</span></a></li>
+      <li><a href="./pages/quisuisje.html"><span>Qui Suis Je</span></a></li>
+      <li><a href="./pages/projets.html"><span>Projet</span></a></li>
+      <li><a href="./pages/contact.html"><span>Contact</span></a></li>
+
+    </ul>
+  </nav>
+</header>
+
+
+<!-- **************** CONTACT  *******************  -->
+    <section id="sectioncontact">
+			<h2> Contact  </h2> <!-- TITRE DE LA SECTION (CONTACT) -->
+      <hr class="hr-break-line"> <!-- BARE DE SOULIGNEMENT -->
+      <br>
+
+<!-- **************** FORMULAIRE CONTACT  *******************  -->
+      <form action="http://driad.fr/php/contact.php" id="contact" method="POST">
+        <label>
+          <span>Nom et Prénom</span>
+          <input type="text" id="userName" name="userName" placeholder="Nom Prénom" />
+          <br/><span id="msg_nom"></span>
+        </label>
+
+        <label>
+          <span>Adresse Email</span>
+          <input type="email" id="userEmail" name="userEmail" placeholder="exemple@domain.com" />
+          <br/><span id="msg_email"></span>
+        </label>
+
+        <label>
+          <span>Téléphone</span>
+          <input type="tel" id="userPhone" name="userPhone" placeholder="01 02 03 0 405" />
+        </label>
+
+        <label class="full-width">
+          <span>Votre messsage</span>
+          <textarea></textarea>
+          <br/><span id="msg_message"></span>
+        </label>
+
+        <input type="submit" id="submitInfo" name="submitInfo" value="envoyez" />
+      </form>
+<!-- **************** FIN FORMULAIRE CONTACT  *******************  -->
+
+
+
+<!-- **************  LIEN DE RESEAUX SOCIAL ************** -->
+        <div class="footer">
+            <div class="social">&#62220;</div>
+            <div class="social">&#62217;</div>
+            <div class="social">&#62223;</div>
+            <div class="social">&#62232;</div>
+       </div>
+<!-- **************  FIN LIEN DE RESEAUX SOCIAL ************** -->
+  	</section>
+  </body>
+</html>
